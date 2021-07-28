@@ -1,0 +1,36 @@
+body{
+  margin-top: 40px;
+}
+.row{
+  margin-top:20px;
+}
+header{
+  background:rgb(191, 247, 228);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.banner{
+  background:bisque;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.servicios .servicio{
+  background:rgb(216, 173, 255);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sobre-nosotros{
+  background:rgb(238, 185, 240);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+aside{
+  background:rgb(240, 230, 185);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer{
+  background:rgb(171, 197, 245);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
