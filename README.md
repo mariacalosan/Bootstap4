@@ -1,135 +1,160 @@
-<!--<!DOCTYPE html>
+`Curso de Bootstrap`
+
+**_He realizado este archivo con la intención de guardar todo lo aprendido en el curso explicando detallada mente los  conceptos  acerca de Bootstrap y por si alguna persona le interesa y le es útil_**
+
+# Modulo 1 del curso de Bootstrap
+
+en el módulo 1 se habla de la introducción que es Bootstrap, que es un framework y como se puede hacer la instalación de Bootstrap
+
+### **¿Qué es Bootstrap?**
+
+Bootstrap es un  framework que trae código **CSS, JS** que fácilmente nosotros podemos utilizar y ajustar a nuestro gusto
+
+### **¿Qué es un framework?**
+
+Un framework es un conjunto de herramientas que le permiten al desarrollador, desarrollar de una manera más sencilla
+existen muchos framework, pero en este caso nos estamos enfocando en un framework web
+
+### _Descarga he instalación de Bootstrap4_
+
+### **Pasos**
+
+1. Crea una carpeta en tu escritorio le pondrás el nombre que quieras, la idea de esta carpeta es alojar todo lo que necesitaremos para ir avanzando
+
+2. Dentro del editor que manejes, en este caso yo utilizo el de visual studio code si no lo tienes, acá te dejo un link donde lo puede descargar https://code.visualstudio.com/download, dentro de la carpeta crea un archivo HTML y tres capetas más cada una con un nombre diferente **CSS, JS e IMG**
+
+3. Para la instalación de Bootstrap https://getbootstrap.com/docs/5.1/getting-started/download/ 
+   y en la opción de download vamos a dar clic y nos sale toda la documentación para la descarga y descargamos la versión compilada de  Bootstrap
+
+4. Ya después de haber descargado la versión compilada de Bootstrap 
+   lo que hacemos es abrir la carpeta que descargamos y vemos que trae dos carpetas que sería la de **CSS y JS**
+
+5. Al abrir ambas carpetas **CSS y JS** vemos que traen varios archivos
+   te puedes quedar con todos o con los que elijas, pero yo me quede con el archivo Bootstrap.min.css lo mismo que con el de Bootstrap.min.js estos dos archivos son minificados para que esta ocupe menos espacio en el disco y estos archivos los vamos a apegar en las carpetas que creamos de **CSS y JS** claro está el de  **CSS con el de CSS y el de JS con el de JS**
+
+### **Descarga del jQuery**
+
+por si se preguntan que es jQuery (este es plugin de JS del cual Bootstrap depende)
+Para descargar jQuery vamos a ir a este link https://jquery.com/download/ para descarga lo descargamos la versión comprimida él te va a arrojar todo el código lo copias y lo pegas en un archivo que vas a crear llamado jquery.js que va a estar dentro de la carpeta de **JS**
+
+### **Descarga del Popper**
+
+para el Popper es lo mismo que hicimos con el de jQuery lo descargas copias lo que te descargo y lo pegas en el archivo que vas a crear de popper.js para la descarga entras a este link https://popper.js.org/ de este también descarga la versión comprimida
+
+# Vinculación de Bootstrap, jQuery y Popper
+
+Esta es la estructura básica de tu archivo HTML
+
+```html
+<!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+```
+
+Dentro de el `Head` vamos a vincular a  bootstrapmin.css que descargamos lo vinculamos
+`<link rel="stylesheet" href="css/bootstrap.min.css"/>`
+
+```html
 <head>
-  <meta charset="UTF-8">-->
-<!--  <title>divertilandd</title>-->
-  <!--vinculacion de el los estilos de css de bootstrap -->
-<!--  <link rel="stylesheet" href="estilos/css/bootstrap.min.css">-->
-  <!--creacion de un nuevo archivo de css -->
-<!--  <link rel="stylesheet" href="estilos/css/stely.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <title>Document</title>
 </head>
-<body>-->
-  <!--la class container lo que hace es que me va a sentrar lo que yo tenga en el bloque esto lo genera bootstrap hay otro  tipo de contenedor que es para el ancho completo que serai en container-fluid -->
-<!--  <div class="container">-->
-    <!--en esta parte de el index y de el curso estamos viendo como es la creacion de columnas va todo dentro de este div con la clase row que en español es filas-->
-    <!--<div class="row">-->
-     <!--creacion de la columna dentro de est div agregue mi h1 y el parrafo  de esta manera se puede pocisionar elementos en la pagina si quisiera mas elementos en mi fila lo podria hacer como este codigo -->
-     <!--le indique asta donde queria que estuviera el contenido de la columna ahora le quiero indicar el largo con la fincion col-lg le puedo indicar el largo que quiero en la columna -->
-   <!--   <div class="col-2 col-sm-4 col-lg-2">
-          <h1>divertilandd</h1>
-          <p>
-            lorem hello hola gente como estamos el  dia de hoy
-          </p>
-      </div>
-    </div>
-  </div>-->
+```
 
-  <!--<div class="container">
-    <div class="row">
-      <div class="col columna">1</div>
-      <div class="col columna">2</div>
-      <div class="col columna">3</div>
-      <div class="col columna">4</div>
-      <div class="col columna">5</div>
-      <div class="col columna">6</div>
-      <div class="col columna">7</div>
-      <div class="col columna">8</div>
-      <div class="col columna">9</div>
-      <div class="col columna">10</div>
-      <div class="col columna">11</div>
-      <div class="col columna">12</div>
-    </div>
-  </div>-->
+Para vincular los **JS** lo hacemos en él `body` en las últimas líneas es importante que antes de vincular a Bootstrap vinculemos primero lo que es el jQuery y el Popper
+` <script src="js/jquery.js"></script>`
 
-  <!--vinculacion de el jquery para boostrap este se debe de vincular antes de vincular js -->
-  <!--<script src="estilos/js/jquery.js"></script>-->
-  <!--vinculacion de el popper este debe ir antes de bootstrap y despues de jquery-->
-  <!--<script src="estilos/js/popper.js"></script>-->
-  <!--vinculacion de el srchivo de js de bootstrap-->
-  <!--<script src="estilos/js/bootstrap.min.js"></script
-  con la clase de col-auto solo metoma el espacio donde esta el texto
+` <script src="js/popper.js"></script>`
 
-halladiendo el offset  el offset es basicamente el espacio que se puede añadir en blanco este siempre va a añadir columnas en blanco hacia la izquierda
+` <script src="js/bootstrap.min.js"></script>`
 
-tipografias etiqeuta small es para poner extosa mas pequeño
-clase display esta clase lo que haces es que cambia de forma Cambie de forma rápida y sensible el valor de visualización de los componentes y más con nuestras utilidades de visualización hace el los titulos mas grades
+````html
+<body>
+  <script src="js/jquery.js"></script>
+  ```
+  <script src="js/popper.js"></script>
+  ```
+  <script src="js/bootstrap.min.js"></script>
+  ```
+</body>
+````
 
-continuacion con la tipografia
-etiqueta mark  es representada con un color de fondo amarillo y algo de relleno:
-etiqueta del o etiqueta s lo que hacesn es tachar el texto
-etiqetas para subrayar el texto la etiqueta ins y la etiqueta U
-etiqueta strong lo que hace es poner el texto en negrita
-etiqueta em para poner el texto en tipo italica
-el texto tan bien se puede aliniar pormedi de clases
-clas=" text-left"
-clas=" text-center"
-clas=" text-right"
-clas=" text-justify"
-capitalizacion de texto la capitalizacion de texto sirve para poner la primera letra de le texto en mayuscula
-texto en minuscula con text-lowercase
-para todo el texto en mayuscula es uppercase
-clase para cambair el fondo de la letra
-ejemplos de los tipos de atributos para la tipografia en codigo
-   <p class="text-left font-weight">Lorem ipsum dolor sit amet.</p>
-        <p class="text-right">Lorem ipsum dolor sit amet.</p>
-        <p class="text-justify">Lorem ipsum dolor sit amet.</p>
-        <p class="text-capitalize">Lorem ipsum dolor sit amet.</p>
-        <p class="text-uppercase">Lorem ipsum dolor sit amet.</p>
-        <p class="text-lowercase">Lorem ipsum dolor sit amet.</p>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, cumque! Officiis, voluptatibus facere. Aliquam nesciunt repudiandae sit ut dolore officia provident, aut unde, velit autem libero labore sint pariatur fugiat expedita necessitatibus in, hic laudantium! Iure, voluptatibus velit in dolores natus animi maiores autem cupiditate, corrupti vel totam blanditiis illum. Commodi, molestias hic quidem facere eos distinctio. Laboriosam illo fuga nemo placeat ad quasi accusamus pariatur reiciendis aliquam! Laudantium dolorum laborum aperiam possimus, quasi repellat voluptate doloremque vitae ad inventore corporis mollitia error iure, quae quidem quos in, quis suscipit magnam odio. Rerum impedit, numquam non maxime minima autem placeat.
-    </p>
-<div class="mt-4">
-        <p> Lorem ipsum <mark>dolor</mark>sit amet.</p>
-        <p>Lorem ipsum <del> sit</del> <s>amet</s></p>
-        <p>Lorem <ins>ipsum</ins> dolor <u>amet</u>.</p>
-        <p>Lorem <strong>dolor </strong> sit amet.</p>
-        <p>Lorem <em>dolor</em> sit amet.</p>
-      </div>
-etiqueta blockquote esta etiqueta es para Crea citas en bloque, marca las citas a otros autores o documentos. este tambien esta como clase en bootstrap
+_Ya teniendo lista la instalación de Bootstrap y todo lo demás vamos a seguir con el módulo 2_
 
-como mostrar codigo de una maneras facil para los usuarios
+# Modulo 2 layouts de Bootstrap
 
-como manipular imagenes por medio de clases
-class="img-fluid" esta clase lo que hace es que añade un max-widht de el 100% y el heigth lo pone en auto
-class="img-thumbnail" esta se encarga de darle una apariencia a la imagen un poco mas estilo de catalogo
-class="img-runded" para darle un estilo a la imagen mas redindeao el borde
-ejemplo en codigo de como implementas las clases 
-<section
-        class="
-          row
-          servicios
-          justify-content-lg-around justify-content-xl-between
-         ">
-        <!--se agrego una nueva seccion para los serviciops de la pagina  -->
-        <div class="servicio col-sm-6 col-md-4 col-lg-3">
-          <h3 class="display">servicios</h3>
-          <img class="img-rounded" src="estilos/img/tobogan.png" alt="tobogan">
-          <p>me gusta la adrenalina</p>
-        </div>
-        <div class="servicio col-sm-6 col-md-4 col-lg-3">
-          <h3>servicios</h3>
-          <img class="img-thumbnail" src="estilos/img/tobogan.png" alt="tobogan">
-          <p><small>me gusta la adrenalina</small></p>
-        </div>
-        <div class="servicio col-sm-6 col-md-4 col-lg-3 offset-1">
-          <h3>servicios</h3>
-          <img class="img-fluid" src="estilos/img/tobogan.png" alt="tobogan">
-          <p>me gusta la adrenalina</p>
-        </div>
-      </section>
-la imagen tan bien se puede añadir dentro una etiqueta figure
-esta se le puede añadir texto un label que describa que es lo que esta en la imagen
-ejemplo de como se veria en codigo
+_En mi archivo index podrán ver más detalladamente la implementación de lo que voy haciendo medida de que avanzó en el curso_
 
-        <div class="row">
-          <div class="col">
-            <figure class="figure">
-              <img class="img-fluid" src="estilos/img/calzado.jpg" alt="calzado">
-              <figcaption class="figured-caption">este son los zapatos </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
+Antes de seguir con el módulo 2 en el `Head` donde vinculamos el archivo de Bootstrap vamos a vincular un archivo nuevo que vamos a hacer de **CSS**
+`<link rel="stylesheet" href="css/stely.css" />` ese archivo que acabamos de crear es por si acaso queremos escribir nuestro propio codigo css
 
-<!--tablas-->
-se pueden crear de la forma tradiciona que seria con la etiqueta table despues de eso le puedes hacer la estructura normal e la tabla agregando filasy columnas de una forma semantica con las etiquetas de thead para el encabezado de la pagina y tbody para el cuerpo de la tabla dentro de la etiqueta pondras la etiqueta tr que es la tebolrode que esta significa que define una fila de celdas en una tabla. dentro de esta etiqueta se vendria poniendo lo que seria los th que esta etiqueta seria de  define una celda como encabezado de un grupo de celdas en una tabla
+```html
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/stely.css" />
+  <title>Document</title>
+</head>
+```
+
+### **Aprendiendo a usar contenedores**
+
+en bootstra se manejan dos clases, esta la `class="container"` y la `class="container-fluid"`
+
+## container
+
+esta clase centra el contendio manteniendolo con un margen derecho y uno izquiero que hace que se vea centradon este ira cambiando dependien el tamaño de la pantalla manteniendose responsive
+
+`Ejemplo codigo`
+
+```html
+<body>
+  <div class="container">
+    <h1>Tyrone</h1>
+  </div>
+  <script src="js/jquery.js"></script>
+
+  <script src="js/popper.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+```
+![container ejemplos](https://lh3.googleusercontent.com/proxy/m7HYUZ_9p7SWzGE1yFY47OEAqAb2jAc_7lwiYtTZZjAFKAW-oIg0RijuFZPpJI6sMYfrD3R_bQoPVGvOaz8lUyT6tYs3yTWeBRHrXAAB3HKSuMu6Oi1wvXE81g)
+
+## container-fluid
+la diferencia de este container es que etsa siempre establece el ancho maximo de el 100% de modo que se puede adptar a todo tipo de pantalla
+
+```Ejemplo codigo```
+```html
+  <body>
+  <div class="container-flui">
+    <h1>Tyrone</h1>
+  </div>
+  <script src="js/jquery.js"></script>
+
+  <script src="js/popper.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+```
+
+![container ejemplos](https://lh3.googleusercontent.com/proxy/vofiFQCxcACafDieXELLymYuVeVli3Mf6sCtgAuEV0iMP8GhWl_4Xxc1-3zCsH9ubaYKsnf6wugewmazQnTLJH_yw9iROs4zKdjtn7FbNhm97GQwh49gPNvxGA)
+
+
+
+
+
+
+
