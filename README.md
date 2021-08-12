@@ -131,7 +131,8 @@ esta clase centra el contendio manteniendolo con un margen derecho y uno izquier
   <script src="js/bootstrap.min.js"></script>
 </body>
 ```
-![container ejemplos](https://lh3.googleusercontent.com/proxy/m7HYUZ_9p7SWzGE1yFY47OEAqAb2jAc_7lwiYtTZZjAFKAW-oIg0RijuFZPpJI6sMYfrD3R_bQoPVGvOaz8lUyT6tYs3yTWeBRHrXAAB3HKSuMu6Oi1wvXE81g)
+![container ejemplos](http://rauljesus.xyz/web/bootstrap/imgBootstrap/bGridContainer1.png)
+
 
 ## container-fluid
 la diferencia de este container es que etsa siempre establece el ancho maximo de el 100% de modo que se puede adptar a todo tipo de pantalla
@@ -149,7 +150,7 @@ la diferencia de este container es que etsa siempre establece el ancho maximo de
   <script src="js/bootstrap.min.js"></script>
 </body>
 ```
-![container ejemplos](https://lh3.googleusercontent.com/proxy/vofiFQCxcACafDieXELLymYuVeVli3Mf6sCtgAuEV0iMP8GhWl_4Xxc1-3zCsH9ubaYKsnf6wugewmazQnTLJH_yw9iROs4zKdjtn7FbNhm97GQwh49gPNvxGA)
+![container ejemplos](http://rauljesus.xyz/web/bootstrap/imgBootstrap/bGridContainer2.png)
 
 
 
